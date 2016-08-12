@@ -26,7 +26,9 @@ break;
 if(flag)
 count++;
 }
-}
 System.out.println(count);
+}
+else
+System.out.println("boundary condition exceeds");
 }
 }

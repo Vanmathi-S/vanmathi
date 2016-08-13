@@ -18,7 +18,7 @@ int mindis=Integer.MAX_VALUE;
 int index=-1;
 for(int i=0;i<arr.length;i++)
 {
-if(arr[i]==n||arr[i]==n1)
+if(arr[i]==start||arr[i]==end)
 {
 if(index==-1)
 {

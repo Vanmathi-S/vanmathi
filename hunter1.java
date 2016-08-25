@@ -6,13 +6,22 @@ public static void main(String[] args)
 {
 Scanner sc=new Scanner(System.in);
 int n=sc.nextInt();
-int[] num=new int[n];
-Set<Integer> set=new LinkedHashSet<Integer>();
+String str[]=new String[n];
+Map<String,Integer> map=new LinkedHashMap<String,Integer>();
 for(int i=0;i<n;i++)
+str[i]=sc.nextLine();
+for(String i:str)
 {
-num[i]=sc.nextInt();
-set.add(num[i]);
+  if(map.containsKey(i))
+  map.put(i,map.get(i)+1);
+  else
+  map.put(i,1);
 }
-System.out.println(set);
+Set<String> set=mapkeySet();
+for(String i:set)
+{
+  if(map.get(i)>1)
+  System.out.print(i+" ");
+}
 }
 }

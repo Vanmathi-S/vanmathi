@@ -21,7 +21,7 @@ System.out.println(ar[j]);
 }
 }
 else
-System.out.println("give correct input");
+System.out.println("incorrect data");
 }
 }
 }
